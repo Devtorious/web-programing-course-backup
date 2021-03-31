@@ -1,0 +1,100 @@
+/*html
+h1
+{
+	font-size: 3em;
+}
+h2{
+	font-size:2em;
+}
+a:hover, a:active, a:visited{
+	color: purple;
+}
+#education:nth-child(2){
+	background-color: gray
+
+}*/
+
+
+
+/****TEACHER's SOLUTION**week 4 excercises 1 CSS basic **/
+/*h1, h2, h3, h4 {
+  font-family: Times, serif;
+}
+
+h1 {
+  color: hsl(250, 100%, 50%);
+  font-size: 40px;
+}
+
+h2 {
+  color: hsl(250, 90%, 50%);
+  font-size: 36px;
+}
+
+h3 {
+  color: hsl(250, 80%, 50%);
+  font-size: 32px;
+}
+
+.active {
+  background-color: #abc;
+  color: red;
+}
+
+.active a{
+    color: red;
+}
+nav li:hover {
+  background-color: purple;
+}
+
+main p:first-child {
+  color: #abc;
+}
+
+.job-description p {
+  color:#f00;
+}
+
+#education table tr:nth-child(2n){
+  background-color:#abc
+}
+
+#education table tr:nth-child(2n+1){
+  background-color:#cba
+}*/
+
+
+/***teacher's solution backup**ex2**/
+/**
+li{
+  color:green
+}
+
+li:first-child{
+  color:red
+}
+li:last-child{
+color:blue
+}
+
+ol + p::first-line {
+  background-color: pink;
+}
+
+p + p::first-line {
+  background-color: lightblue;
+}
+
+P::selection {
+  background-color: yellow;
+}
+
+input[required] {
+  background-color: pink;
+}
+
+input[required]:active {
+  background-color: white;
+}
+**/
