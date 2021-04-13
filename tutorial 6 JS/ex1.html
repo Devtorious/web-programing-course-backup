@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Calculator</title>
+    <style>
+      div {
+        margin: 10px;
+      }
+      input[type="button"] {
+        margin: 5px;
+        padding: 5px;
+      }
+    </style>
+    <script>
+      function querySelector(selector) {
+        return document.querySelector(selector);
+      }
+      
+      function add() {
+        n1 = querySelector("#number1").value;
+        n2 = querySelector("#number2").value;
+        querySelector("#result").value = parseFloat(n1) + parseFloat(n2); 
+      }
+
+      function minus(){
+        n1 = querySelector("#number1").value;
+        n2 = querySelector("#number2").value;
+        querySelector("#result").value = parseFloat(n1) - parseFloat(n2)
+      }
+
+      function multiply(){
+        n1 = querySelector("#number1").value;
+        n2 = querySelector("#number2").value;
+        querySelector("#result").value = parseFloat(n1) * parseFloat(n2)
+      }
+
+      function divition(){
+        n1 = querySelector("#number1").value;
+        n2 = querySelector("#number2").value;
+        querySelector("#result").value = parseFloat(n1) / parseFloat(n2)
+      }
+	</script>
+  </head>
+
+  <body>
+    <div>
+      <input id="number1" placeholder="Number 1" type="number">
+    </div>
+    <div>
+      <input id="number2" placeholder="Number 2" type="number">
+    </div>
+    <div>
+      <input id="result" readonly type="number">
+    </div>
+    <div>
+      <input type="button" value=" + " onClick="add()">
+      <input type="button" value=" - " onClick="minus()">
+      <input type="button" value=" * " onClick="multiply()">
+      <input type="button" value=" / " onClick="divition()">
+    </div>
+  </body>
+</html>

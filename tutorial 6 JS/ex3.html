@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Calculator</title>
+    <style>
+      div {
+        margin: 20px;
+      }
+      #time {
+        background-color: bisque;
+        font-size: xx-large;
+      }
+    </style>
+    <script>
+        function qs(selector){
+            return document.querySelector(selector);
+        }
+        function display_time(){
+            d = new Date();
+            h = d.getHours();
+            m = d.getMinutes();
+            s = d.getSeconds();
+            qs("#time").innerHTML = h + ":" + m + ":" + s;
+        }
+
+       
+        function start_time(){
+            setInterval(display_time, 1000);
+            qs("#digital_timer").onClick = stop_timer();
+            qs("#digital_timer").value = "stop";
+        }
+    
+        function stop_timer(){ 
+            clearInterval(display_time);
+            qs("#digital_timer").onClick = start_time();
+            qs('#digital_timer').value = "start";
+        }
+        //error atm
+
+    </script>
+  </head>
+
+  <body>
+    <div id="time">
+      Your local time
+    </div>
+    <div>
+      <input id="digital_timer" type="button" value="Start" onclick="start_time()">
+    </div>
+  </body>
+</html>
